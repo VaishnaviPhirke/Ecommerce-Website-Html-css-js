@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Ecommerce Website Design</title>
+
+  <!--font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <!--custom css file link -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="images/logo.jpg" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <a href="#" id="close"><i class="fa-solid fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>   
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <section id="page-header">
+    <h2>YourStyle</h2>
+    <p>Save more with coupons & upto 70% off!</p>
+  </section>
+
+  <section id="product1" class="section-p1">
+    <div class="pro-container">
+      <div class="pro"  
+        data-name='Womens Floral Dresses',
+        data-price="499"
+        data-description="Elevate your wardrobe with this elegant floral dress, perfect for daytime outings or casual evenings. 
+        Crafted from soft, breathable fabric, it features a flattering fit-and-flare silhouette, subtle pleats, and delicate printed patterns that add charm and grace. 
+        Pair it with your favorite sandals or heels for an effortlessly stylish look."
+        data-category="Dress"
+        data-image="images/prod1.png">
+        <img src="images/prod1.png" alt="">
+
+        <div class="des">
+          <span>Alsol Lamesa</span>
+          <h5>Tropical Print Maxi Dress</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹499</h4>
+        </div>
+        <a href="javascript:void(0)" 
+           class="add-to-cart" 
+           data-name="Tropical Print Maxi Dress" 
+           data-price="499" 
+           data-image="images/prod1.png"><i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+      
+      <div class="pro"
+        data-name="Hawaiian Style Short Sleeve Shirt"
+        data-price="2518"
+        data-description="A breezy Hawaiian short sleeve shirt made from lightweight cotton, perfect for summer getaways and casual beach outings."
+        data-category="Shirt"
+        data-image="images/prod2.jpg">
+        <img src="images/prod2.jpg" alt="">
+
+        <div class="des">
+          <span>NAMANYLE</span>
+          <h5>Hawaiian Style Short Sleeve Shirt</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹2518</h4>
+        </div>
+        <a href="javascript:void(0)" 
+           class="add-to-cart" 
+           data-name="Hawaiian Style Short Sleeve Shirt" 
+           data-price="2518" 
+           data-image="images/prod2.jpg"><i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+
+      <div class="pro"
+      data-name="Striped Cotton Shirt"
+        data-price="1050"
+        data-description="Classic striped cotton shirt with a crisp finish, versatile enough for both office wear and casual evenings."
+        data-category="Shirt"
+        data-image="images/prod3.png">
+        <img src="images/prod3.png" alt="">
+
+        <div class="des">
+          <span>Eva Fashion</span>
+          <h5>Striped Cotton Shirt</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹1050</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+            data-name="Striped Cotton Shirt" 
+            data-price="1050" 
+            data-image="images/prod3.png">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+
+      <div class="pro"
+        data-name="Turndown Short Sleeve Shirt"
+        data-price="659"
+        data-description="Turndown collar short sleeve shirt with a relaxed fit, perfect for warm weather comfort."
+        data-category="Shirt"
+        data-image="images/prod4.png">
+        <img src="images/prod4.png" alt="">
+
+        <div class="des">
+          <span>Jovati</span>
+          <h5>Turndown Short Sleeve Shirt</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹659</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+          data-name="Turndown Short Sleeve Shirt" 
+          data-price="659" 
+          data-image="images/prod4.png">
+          <i class="fa-solid fa-cart-shopping cart"></i>
+          </a>
+      </div>
+
+      <div class="pro"
+        data-name="Womens Summer Palazzo Pants"
+        data-price="1895"
+        data-description="Flowy palazzo pants made from breathable fabric, offering comfort and elegance for summer wear."
+        data-category="Pants"
+        data-image="images/prod5.jpg"> 
+        <img src="images/prod5.jpg" alt="">
+        <div class="des">
+          <span> LILLUSORY</span>
+          <h5>Women's Summer Palazzo Pants</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹1895</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+        data-name="Women's Summer Palazzo Pants" 
+        data-price="1895" 
+        data-image="images/prod5.jpg">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+
+      <div class="pro"
+        data-name="Long Skirt"
+        data-price="889"
+        data-description="Lightweight summer skirt with a flowing design, perfect for pairing with tanks or blouses."
+        data-category="Skirt"
+        data-image="images/prod6.png">
+        <img src="images/prod6.png" alt="">
+        <div class="des">
+          <span>Emottos</span>
+          <h5>Summer Long Skirt</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹889</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+        data-name="Summer Long Skirt" 
+        data-price="889" 
+        data-image="images/prod6.png">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+
+      <div class="pro"
+        data-name="Trendy Mens Stretchable Shorts"
+        data-price="499"
+        data-description="Comfortable stretchable shorts for men, designed for casual outings and active days."
+        data-category="Pants"
+        data-image="images/prod7.jpg">
+        <img src="images/prod7.jpg" alt="">
+        <div class="des">
+          <span>Lycra</span>
+          <h5>Tropical Print Maxi DressTrendy Mens Strechable Shorts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹499</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+        data-name="Trendy Mens Strechable Shorts" 
+        data-price="499" 
+        data-image="images/prod7.jpg">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+
+      <div class="pro"
+        data-name="Oversized Drop Shoulder T-Shirt"
+        data-price="380"
+        data-description="Fit oversized T-shirt with drop shoulders for a trendy streetwear style."
+        data-category="Shirt"
+        data-image="images/prod8.jpg">
+        <img src="images/prod8.jpg" alt="">
+        <div class="des">
+          <span>ZHIYUE Clothing</span>
+          <h5>Casual Oversized Drop Shoulder T-Shirt</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹380</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+        data-name="Casual Oversized Drop Shoulder T-Shirt" 
+        data-price="380" 
+        data-image="images/prod8.jpg">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+
+      <div class="pro"
+        data-name="Tank Top"
+        data-price="1175"
+        data-description="Crop tank top made from soft cotton blend, ideal for layering or wearing solo."
+        data-category="Top"
+        data-image="images/prod9.jpg">
+        <img src="images/prod9.jpg" alt="">
+        <div class="des">
+          <span>Alamode</span>
+          <h5>Crop Tank Top</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹1175</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+        data-name="Crop Tank Top" 
+        data-price="1175" 
+        data-image="images/prod9.jpg">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+
+      <div class="pro"
+        data-name="V Neck Party Dress"
+        data-price="3059"
+        data-description="Sequin V-neck dress for parties, designed to make a glamorous statement."
+        data-category="Dress"
+        data-image="images/prod10.jpg">
+        <img src="images/prod10.jpg" alt="">
+        <div class="des">
+          <span>Generic</span>
+          <h5>Sequin V Neck PartyDress</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹3059</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart" 
+        data-name="Sequin V Neck Party Dress" 
+        data-price="3059" 
+        data-image="images/prod10.jpg">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+    
+      <div class="pro"
+        data-name="Fashionable Winter Wear For Men"
+        data-price="499"
+        data-description="Winter wear set designed for warmth and a polished cold-weather look."
+        data-category="Men Wear"
+        data-image="images/wint-prod1.jpg">
+        <img src="images/wint-prod1.jpg" alt="">
+        <div class="des">
+          <span>Alsol Lamesa</span>
+          <h5> Fashionable Winter Wear For Men</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹499</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Fashionable Winter Wear For Men"
+         data-price="499"
+         data-image="images/wint-prod1.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+      
+      <div class="pro"
+        data-name="Hot Sale Women Clothes Set"
+        data-price="4518"
+        data-description="Chic winter clothes set, perfect for staying warm in style."
+        data-category="Women Wear"
+        data-image="images/wint-prod2.jpg">
+        <img src="images/wint-prod2.jpg" alt="">
+        <div class="des">
+          <span>NAMANYLE</span>
+          <h5>Winter hot sale Women Clothes Set</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹4518</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Winter hot sale Women Clothes Set"
+         data-price="4518"
+         data-image="images/wint-prod2.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-name="Muffler Scarf for Men"
+        data-price="459"
+        data-description="Warm knitted muffler scarf designed for ultimate comfort during cold weather."
+        data-category="Men Wear"
+        data-image="images/wint-prod3.jpg">
+        <img src="images/wint-prod3.jpg" alt="">
+        <div class="des">
+          <span>Eva Fashion</span>
+          <h5>Muffler Scarf for men</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹459</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Muffler Scarf for men"
+         data-price="459"
+         data-image="images/wint-prod3.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-name="Winter Thick Outwear Collar Coat"
+        data-price="1659"
+        data-description="Heavy winter coat with thick lining and stylish collar for maximum warmth."
+        data-category="Coat"
+        data-image="images/wint-prod4.jpg">
+        <img src="images/wint-prod4.jpg" alt="">
+        <div class="des">
+          <span>Jovati</span>
+          <h5>Leather Winter Thick Outwear Collar Coat</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹1659</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Leather Winter Thick Outwear Collar Coat"
+         data-price="1659"
+         data-image="images/wint-prod4.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-name="Black Men Stylists Winter Set"
+        data-price="1895"
+        data-description="Modern winter set for men combining style with cold-weather comfort."
+        data-category="Men Wear"
+        data-image="images/wint-prod5.jpg">
+        <img src="images/wint-prod5.jpg" alt="">
+        <div class="des">
+          <span> LILLUSORY</span>
+          <h5> Black Men Stylists Winter Set</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹1895</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Black Men Stylists Winter Set"
+         data-price="1895"
+         data-image="images/wint-prod5.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-image="Winter Cap for Men & Women with Gloves & Neck Muffler"
+        data-price="889"
+        data-description="Complete winter set with cap, gloves, and neck muffler for full protection against the cold."
+        data-category="Men & Women Wear"
+        data-image="images/wint-prod6.jpg">
+        <img src="images/wint-prod6.jpg" alt="">
+        <div class="des">
+          <span>Emottos</span>
+          <h5>Winter Cap for Men & Women with Gloves & Neck Muffler</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹889</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Winter Cap for Men & Women with Gloves & Neck Muffler"
+         data-price="889"
+         data-image="images/wint-prod6.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-name="Womens Winter Lapel Button Long Trench Coat"
+        data-price="3499"
+        data-description="Elegant long trench coat with lapel collar and warm lining for winter style."
+        data-category="Women Wear"
+        data-image="images/wint-prod7.jpg">
+        <img src="images/wint-prod7.jpg" alt="">
+        <div class="des">
+          <span>Lycra</span>
+          <h5>Womens Winter Lapel Button Long Trench Coat</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹3499</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Womens Winter Lapel Button Long Trench Coat"
+         data-price="3499"
+         data-image="images/wint-prod7.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-name="Fleece Solid Lowers Trackpants for Winters"
+        data-price="380"
+        data-description="Warm fleece trackpants for comfortable wear during chilly weather."
+        data-category="Pants"
+        data-image="images/wint-prod8.jpg">
+        <img src="images/wint-prod8.jpg" alt="">
+        <div class="des">
+          <span>KAYU Clothing</span>
+          <h5> Fleece Solid Lowers Trackpants for Winters</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹380</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Fleece Solid Lowers Trackpants for Winters"
+         data-price="380"
+         data-image="images/wint-prod8.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-name="Full Sleeve Woolen Strip Sweater"
+        data-price="1175"
+        data-description="Cozy full sleeve woolen sweater with stylish strip pattern for winter warmth."
+        data-category="Sweater"
+        data-image="images/wint-prod9.png">
+        <img src="images/wint-prod9.png" alt="">
+        <div class="des">
+          <span>Alamode</span>
+          <h5>Full Sleeve Woolen Strip Sweater</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹1175</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Full Sleeve Woolen Strip Sweater"
+         data-price="1175"
+         data-image="images/wint-prod9.png">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+
+      <div class="pro"
+        data-name="Full Sleeve Woolen Strip Sweater"
+        data-price="1175"
+        data-description="Cozy full sleeve woolen sweater with stylish strip pattern for winter warmth."
+        data-category="Sweater"
+        data-image="images/wint-prod9.png">
+        <img src="images/wint-prod10.jpg" alt="">
+        <div class="des">
+          <span>Temu Generic</span>
+          <h5>Womens Stylish winter dress</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>₹3059</h4>
+        </div>
+        <a href="javascript:void(0)" class="add-to-cart"
+         data-name="Womens Stylish winter dress"
+         data-price="3059"
+         data-image="images/wint-prod10.jpg">
+         <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="fa-solid fa-long-arrow-alt-right"></i></a>
+  </section>
+
+  <section id="panel" class="section-p1 section-m1">
+    <div class="news">
+      <h4>Stay tuned - sign up now!</h4>
+      <p>Be the first to know about new arrivals and <span>exclusive offers.</span>
+      </p>
+    </div>
+    <div class="form">
+      <button class="normal btn-primary"  onclick="window.location.href='signup.html'">Sign Up</button>
+      <button class="normal btn-secondary"  onclick="window.location.href='signin.html'">Sign In</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="footer-container">
+      <div class="col">
+      <img class="logo" src="images/logo.jpg">
+      <h4>Contact</h4>
+      <p><strong>Address: </strong>Andheri West, Mumbai - 400053</p>
+      <p><strong>Phone: </strong>98201 23456 (+91) 91674 98765</p>
+      <p><strong>Hour: </strong>9:00 - 20:00. Mon-Sat</p>
+
+      <div class="follow">
+        <h4>Reach out to us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>       
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="delivery.html">Delivery Info</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="signin.html"><i class="fa-solid fa-right-to-bracket sign"></i>Sign In</a>
+      <a href="#"><i class="fa-solid fa-heart heart"></i>Wishlist</a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i>View Cart</a>
+      <a href="track.html"><i class="fa-solid fa-location-dot location"></i>Track Order</a>
+      <a href="help.html"><i class="fa-solid fa-message support"></i>Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="images/app-store.png" alt="">
+        <img src="images/google-play.png" alt="">
+      </div>
+      <p class="gateway">Secured Payment Gateways</p>
+      <div class="gway">
+        <img src="images/payment.png" alt="">
+      </div>
+    </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 VAZA. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

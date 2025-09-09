@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Ecommerce Website Design</title>
+
+  <!--font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <!--custom css file link -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="images/logo.jpg" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <a href="#" id="close"><i class="fa-solid fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>   
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <section id="page-header" class="blog-header">
+    <h2>WardrobeWhispers</h2>
+    <p>Explore detailed case studies on our products!</p>
+  </section>
+
+  <section id="blog">
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/blog/b1.jpg">
+        </div>
+        <div class="blog-details">
+            <h4>Rise & Zip: The Ultimate Zip-Up Jersey</h4>
+            <p>The Emottos Zip-Up Jersey is your everyday essential that blends performance with street style. 
+                Its breathable, stretchable fabric keeps you cool and agile, whether you're on a run or running errands. 
+                With sleek pockets and a high-neck zip, it's comfort and style in one layer.</p>
+               <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>21/04</h1>
+    </div>
+
+     <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/blog/b2.jpg">
+        </div>
+        <div class="blog-details">
+            <h4>Cargo Comeback: From Utility to Streetwear</h4>
+            <p>Cargo pants are no longer just for hiking trails. 
+                With oversized pockets and sleek fits, they’ve become the new staple for off-duty looks.
+                Pair them with cropped tees or oversized jerseys for that modern utility aesthetic.</p>
+               <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>26/04</h1>
+    </div>
+
+     <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/blog/b3.jpeg">
+        </div>
+        <div class="blog-details">
+            <h4>Style Tips - Dress Up Basics Without Overthinking It</h4>
+            <p>A basic zip-up, high-waisted trackpants, and clean white sneakers — simple, 
+                but when accessorized with hoops and a slick bun, it turns heads.
+                Focus on fit, layering, and one bold element (like tinted glasses or a mini bag).</p>
+               <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>01/05</h1>
+    </div>
+
+     <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/blog/b4.jpg">
+        </div>
+        <div class="blog-details">
+            <h4>Smart Layering: Comfort Meets Fashion</h4>
+            <p>Layer your Hawaiian shirt over a solid tank or under a zip-up hoodie. 
+                Add palazzos or joggers for a fusion look that blends cozy and 
+                statement in one outfit.</p>
+               <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>09/05</h1>
+    </div>
+
+     <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/blog/b5.jpg">
+        </div>
+        <div class="blog-details">
+            <h4>Work-from-Café Outfits You’ll Actually Love</h4>
+            <p>Skip the blazer. Try a structured t-shirt, fleece joggers, 
+                and your favorite sneakers. Add a statement tote and you're 
+                ready for both emails and iced coffee runs.</p>
+               <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>16/05</h1>
+    </div>
+
+     <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/blog/b6.jpg">
+        </div>
+        <div class="blog-details">
+            <h4>Weekend Uniform: Chill but Styled</h4>
+            <p>ry pairing oversized tees with biker shorts or solid lowers. 
+                Top it off with a jersey jacket tied around your waist — 
+                functional and stylish when the evening breeze hits.</p>
+               <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>07/08</h1>
+    </div>
+  </section>
+  <section id="pagination" class="section-p1">
+    <a onclick="changePage(1)" href="#">1</a>
+    <a onclick="changePage(2)" href="#">2</a>
+    <a href="#"><i class="fa-solid fa-long-arrow-alt-right"></i></a>
+  </section>
+
+  <section id="panel" class="section-p1 section-m1">
+    <div class="news">
+      <h4>Stay tuned - sign up now!</h4>
+      <p>Be the first to know about new arrivals and <span>exclusive offers.</span>
+      </p>
+    </div>
+    <div class="form">
+      <button class="normal btn-primary"  onclick="window.location.href='signup.html'">Sign Up</button>
+      <button class="normal btn-secondary"  onclick="window.location.href='signin.html'">Sign In</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="footer-container">
+      <div class="col">
+      <img class="logo" src="images/logo.jpg">
+      <h4>Contact</h4>
+      <p><strong>Address: </strong>Andheri West, Mumbai - 400053</p>
+      <p><strong>Phone: </strong>98201 23456 (+91) 91674 98765</p>
+      <p><strong>Hour: </strong>9:00 - 20:00. Mon-Sat</p>
+
+      <div class="follow">
+        <h4>Reach out to us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>       
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="delivery.html">Delivery Info</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="signin.html"><i class="fa-solid fa-right-to-bracket sign"></i>Sign In</a>
+      <a href="#"><i class="fa-solid fa-heart heart"></i>Wishlist</a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i>View Cart</a>
+      <a href="#"><i class="fa-solid fa-location-dot location"></i>Track Order</a>
+      <a href="help.html"><i class="fa-solid fa-message support"></i>Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="images/app-store.png" alt="">
+        <img src="images/google-play.png" alt="">
+      </div>
+      <p class="gateway">Secured Payment Gateways</p>
+      <div class="gway">
+        <img src="images/payment.png" alt="">
+      </div>
+    </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 VAZA. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

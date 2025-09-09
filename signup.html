@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Ecommerce Website Design</title>
+
+  <!--font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <!--custom css file link -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <section id="signup-page">
+    <div class="signup-cont">
+        <h2>Register</h2>
+        <input type="text" id="name" placeholder="Enter Full Name">
+        <input type="email" id="email" placeholder="Enter Email Id">
+        <input type="password" id="password" placeholder="Enter Password">
+        <input type="password" id="confirm-password" placeholder="Confirm Password">
+        <button onclick="signup()">Sign Up</button>
+
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+  </section>
+
+    <script>
+    function signup() {
+      // Get the values from input boxes
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirm-password").value;
+
+      // Check if all fields are filled
+      if (name === "" || email === "" || password === "") {
+        alert("Please fill all fields");
+        return; // stop here
+      }
+
+      // Check if the password and confirm password fields match
+      if (password !== confirmPassword) {
+        alert("Passwords do not match"); // Show alert if passwords don't match
+        return; // Stop the function here
+      }
+
+      // Get old users from localStorage (or empty list if none)
+      let users = localStorage.getItem("users");
+      if (users) {
+        users = JSON.parse(users); // turn text into array
+      } else {
+        users = []; // no users yet
+      }
+
+      // Check if email is already used
+      for (let i = 0; i < users.length; i++) {
+        if (users[i].email === email) {
+          alert("Email already registered");
+          return;
+        }
+      }
+
+      // Add new user to list
+      users.push({
+        name: name,
+        email: email,
+        password: password
+      });
+
+      // Save updated list back to localStorage
+      localStorage.setItem("users", JSON.stringify(users));
+
+      alert("Sign Up successful! Please sign in.");
+      window.location.href = "signin.html"; // go to sign in page
+    }
+  </script>
+
+</body>
+</html>

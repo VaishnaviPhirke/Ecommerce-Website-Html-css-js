@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Ecommerce Website Design</title>
+
+  <!--font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <!--custom css file link -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="images/logo.jpg" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <a href="#" id="close"><i class="fa-solid fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>   
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <section id="page-header" class="contact-header">
+    <h2>Let’s Talk</h2>
+    <p>Have questions? We’re here to help you with anything you need.</p>
+  </section>
+
+  <section id="cart" class="section-p1">
+    <table id="cart-table" width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="empty-cart-message">
+    <p>Your cart is empty.</p>
+    <a href="shop.html">Continue Shopping</a>
+    </div>
+  </section>
+
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Apply Coupon</h3>
+      <div>
+        <input type="text" id="coupon-code" placeholder="Enter your coupon">
+        <button class="normal" id="apply-coupon">Apply</button>
+      </div>
+      <p id="coupon-message" style="color: green; margin-top: 5px;"></p>
+    </div>
+    <div id="subtotal">
+    <h3>Cart Total</h3>
+    <table>
+      <tr>
+        <td>Cart Subtotal</td>
+        <td id="subtotal-value">₹0</td>
+      </tr>
+      <tr>
+        <td>Discount</td>
+        <td id="discount-value">₹0</td> 
+      </tr>
+      <tr>
+        <td>Shipping</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong id="total-value">₹0</strong></td>
+      </tr>
+    </table>
+    <button class="normal" onclick="window.location.href='payment.html'">Proceed to checkout</button>
+  </div>
+  </section>
+
+  <footer class="section-p1 cart-footer">
+    <div class="footer-container">
+      <div class="col">
+      <img class="logo" src="images/logo.jpg">
+      <h4>Contact</h4>
+      <p><strong>Address: </strong>Andheri West, Mumbai - 400053</p>
+      <p><strong>Phone: </strong>98201 23456 (+91) 91674 98765</p>
+      <p><strong>Hour: </strong>9:00 - 20:00. Mon-Sat</p>
+
+      <div class="follow">
+        <h4>Reach out to us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>       
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#">Delivery Info</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="signin.html"><i class="fa-solid fa-right-to-bracket sign"></i>Sign In</a>
+      <a href="#"><i class="fa-solid fa-heart heart"></i>Wishlist</a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i>View Cart</a>
+      <a href="#"><i class="fa-solid fa-location-dot location"></i>Track Order</a>
+      <a href="help.html"><i class="fa-solid fa-message support"></i>Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="images/app-store.png" alt="">
+        <img src="images/google-play.png" alt="">
+      </div>
+      <p class="gateway">Secured Payment Gateways</p>
+      <div class="gway">
+        <img src="images/payment.png" alt="">
+      </div>
+    </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 VAZA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
